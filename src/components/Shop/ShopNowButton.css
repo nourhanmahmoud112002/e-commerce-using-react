@@ -1,0 +1,5 @@
+@media (max-width: 576px) {
+    .btn-custom {
+      width: 320px !important;
+    }
+  }

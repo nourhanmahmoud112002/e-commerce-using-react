@@ -1,0 +1,90 @@
+[
+  {
+    "productName": "T-SHIRT WITH TAPE DETAILS",
+    "price": 120,
+    "priceBefore": 0,
+    "reviews": 4.5,
+    "hasDiscount": false,
+    "DiscountValue": 0,
+    "category": "NEW ARRIVALS",
+    "image": "blob:http://localhost:3001/ec9dbea1-a3de-4ebd-bfb3-854a91ac372e",
+    "id": "1"
+  },
+  {
+    "productName": "SKINNY FIT JEANS",
+    "price": 240,
+    "priceBefore": 260,
+    "reviews": 3.5,
+    "hasDiscount": true,
+    "DiscountValue": 20,
+    "category": "NEW ARRIVALS",
+    "image": "blob:http://localhost:3001/777ccf7b-d363-4714-aaf3-2f8803947711",
+    "id": "2"
+  },
+  {
+    "productName": "CHECKERED SHIRT",
+    "price": 180,
+    "priceBefore": 0,
+    "reviews": 4.5,
+    "hasDiscount": false,
+    "DiscountValue": 0,
+    "category": "NEW ARRIVALS",
+    "image": "blob:http://localhost:3001/22366a07-4c2e-4e5c-8590-eba987a31303",
+    "id": "3"
+  },
+  {
+    "productName": "SLEEVE STRIPED T-SHIRT",
+    "price": 130,
+    "priceBefore": 160,
+    "reviews": 4.5,
+    "hasDiscount": true,
+    "DiscountValue": 30,
+    "category": "NEW ARRIVALS",
+    "image": "blob:http://localhost:3001/5f3bd2cb-1034-4204-a229-559cb317ac3d",
+    "id": "4"
+  },
+  {
+    "productName": "VERTICAL STRIPED SHIRT",
+    "price": 212,
+    "priceBefore": 232,
+    "reviews": 5,
+    "hasDiscount": true,
+    "DiscountValue": 20,
+    "category": "TOP SELLING",
+    "image": "blob:http://localhost:3001/19e41ca8-4e3e-468f-9874-cc3603e497c3",
+    "id": "5"
+  },
+  {
+    "productName": "COURAGE GRAPHIC T-SHIRT",
+    "price": 145,
+    "priceBefore": 0,
+    "reviews": 4,
+    "hasDiscount": false,
+    "DiscountValue": 0,
+    "category": "TOP SELLING",
+    "image": "blob:http://localhost:3001/3fdf1b35-6a21-41ba-9c90-2407b8524fb0",
+    "id": "6"
+  },
+  {
+    "productName": "LOOSE FIT BERMUDA SHORTS",
+    "price": 80,
+    "priceBefore": 0,
+    "reviews": 3.5,
+    "hasDiscount": false,
+    "DiscountValue": 0,
+    "category": "TOP SELLING",
+    "image": "blob:http://localhost:3001/8fc82ef4-058a-4cd5-930e-75d05bbbcb29",
+    "id": "7"
+  },
+  {
+    "productName": "FADED SKINNY JEANS",
+    "price": 210,
+    "priceBefore": 0,
+    "reviews": 4.5,
+    "hasDiscount": false,
+    "DiscountValue": 0,
+    "category": "TOP SELLING",
+    "image": "blob:http://localhost:3001/cdc3987c-5a97-4dc5-b97d-df683d012795",
+    "id": "8"
+  }
+]

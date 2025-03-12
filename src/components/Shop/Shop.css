@@ -1,0 +1,8 @@
+.fs-36-mobile {
+    font-size: 36px !important; /* For small screens */
+  }
+  @media (min-width: 992px) { /* Bootstrap's lg breakpoint (≥992px) */
+    .fs-36-mobile {
+      font-size: 64px !important; /* For large screens */
+    }
+  }
