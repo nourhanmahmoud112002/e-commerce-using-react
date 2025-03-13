@@ -4,6 +4,8 @@ import InputField from "./InputField";
 import { useState,useEffect } from "react";
 import ModalFooter from "./ModalFooter"
 import ImageUploader from "./DragAndDropImage";
+import CategoryDropDownMenu from "./CategoryDropDownMenu";
+import HasDiscountRadioButton from "./HasDiscountRadioButton";
 const ModalBody=({onClose,onAdd,updateItemId,existingItem})=>{
     
     const[title,setTitle]=useState("");
@@ -64,15 +66,16 @@ const ModalBody=({onClose,onAdd,updateItemId,existingItem})=>{
     }
     return <div className="modal-body">
     <form onSubmit={submitHandler}>
-      <InputField label="Product Name" onChange={(e)=>setTitle(e.target.value)} value={title}/>
-      <InputField label="Price" onChange={(e)=>setPrice(e.target.value)} value={price}/>
-      <InputField label="Price Before" onChange={(e)=>setPriceBefore(e.target.value)} value={priceBefore}/>
-      <InputField label="Category" onChange={(e)=>setCategory(e.target.value)} value={category}/>
-      <InputField label="Has Discount (true/false)" onChange={e=>setHasDiscount(e.target.value)}value={hasDiscount}/>
-      <InputField label="Discount Value" onChange={e=>setDiscountValue(e.target.value)} value={discountValue}/>
-      {/* <InputField label="Image" onChange={e=>setImage(e.target.value)} value={image}/> */}
+      <InputField label="Product Name :" onChange={(e)=>setTitle(e.target.value)} value={title}/>
+      <InputField label="Price :" onChange={(e)=>setPrice(e.target.value)} value={price}/>
+      <InputField label="Price Before :" onChange={(e)=>setPriceBefore(e.target.value)} value={priceBefore}/>
+      {/* <InputField label="Category" onChange={(e)=>setCategory(e.target.value)} value={category}/> */}
+      <CategoryDropDownMenu setCategory={setCategory} existingCategory={category}/>
+      <HasDiscountRadioButton setHasDiscount={setHasDiscount} existingHasDiscount={hasDiscount}/>
+      {/* <InputField label="Has Discount (true/false)" onChange={e=>setHasDiscount(e.target.value)}value={hasDiscount}/> */}
+      <InputField label="Discount Value :" onChange={e=>setDiscountValue(e.target.value)} value={discountValue}/>
       <ImageUploader setImage={setImage} existingImage={image}/>
-      <InputField label="Reviews" onChange={e=>setReviews(e.target.value)} value={reviews}/>
+      <InputField label="Reviews :" onChange={e=>setReviews(e.target.value)} value={reviews}/>
       <ModalFooter onClick={onClose} AddBool={updateItemId? false : true}/>
     </form>
   </div>

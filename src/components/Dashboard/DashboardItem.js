@@ -23,7 +23,11 @@ const DashboardItem = (props) => {
         </td>
         <td>${props.price}</td>
         <td>${props.priceBefore}</td>
-        <td>{props.hasDiscount ? `${props.discountValue}%` : "No Discount"}</td>
+        <td>
+  {props.hasDiscount === true || props.hasDiscount === "true"
+    ? `${props.discountValue}%`
+    : "No Discount"}
+</td>
         <td>{props.category}</td>
         <td>{props.reviews}</td>
 
