@@ -1,37 +1,35 @@
-// import Toast from "./Toast";
-
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ModalFooter = (props) => {
-  
   return (
     <div className="modal-footer">
-      <button type="button" className="btn btn-secondary" onClick={props.onClick}>
+      <button
+        type="button"
+        className="btn btn-secondary"
+        onClick={props.onClick}
+      >
         Close
       </button>
-      <button type="submit" className="btn btn-primary" onClick={()=>{
-        if(props.AddBool){
-          toast.success("Product Added successfully");
-          // <Toast title="Product Added successfully"/>
-          console.log("Toast Added");
-          
+      <button
+        type="submit"
+        className="btn btn-primary"
+        onClick={() => {
+          if (props.AddBool) {
+            toast.success("Product Added successfully");
+            console.log("Toast Added");
+          } else {
+            toast.success("Product updated successfully");
 
-        }
-        else{
-          // <Toast title="Product updated successfully"/>
-          toast.success("Product updated successfully");
-         
-          console.log("Toast Updated");
-          
-        }
-        
-       return  props.onClose}}>
+            console.log("Toast Updated");
+          }
+
+          return props.onClose;
+        }}
+      >
         Save changes
       </button>
-      
     </div>
-   
   );
 };
 export default ModalFooter;

@@ -14,9 +14,21 @@ const Brand = () => {
       <div className="row justify-content-center g-4">
         {imagesPath.map((path, index) => {
           if (index <= 2) {
-            return <BrandImage imagePath={path} AddClass="col-md-2" key={Math.random()}/>;
+            return (
+              <BrandImage
+                imagePath={path}
+                AddClass="col-md-2"
+                key={Math.random()}
+              />
+            );
           } else {
-            return <BrandImage imagePath={path} AddClass="col-md-3" key={Math.random()}/>;
+            return (
+              <BrandImage
+                imagePath={path}
+                AddClass="col-md-3"
+                key={Math.random()}
+              />
+            );
           }
         })}
       </div>

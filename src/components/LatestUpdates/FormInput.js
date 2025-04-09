@@ -8,7 +8,7 @@ const FormInput = () => {
         type="email"
         className="form-control rounded-pill ps-5"
         placeholder="Enter your email address"
-        style={{height:48}}
+        style={{ height: 48 }}
       />
     </div>
   );

@@ -9,8 +9,8 @@ const LatestUpdates = () => {
         style={{ borderRadius: 20, paddingTop: 40, paddingBottom: 40 }}
       >
         <div className="row justify-content-center align-items-center">
-            <LatestUpdatesHeader/>
-            <LatestUpdatesForm/>
+          <LatestUpdatesHeader />
+          <LatestUpdatesForm />
         </div>
       </div>
     </section>

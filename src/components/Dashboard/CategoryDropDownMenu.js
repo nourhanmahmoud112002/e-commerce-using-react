@@ -3,9 +3,9 @@ import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 
 function CategoryDropDownMenu({ setCategory, existingCategory }) {
-  const [selectedCategory, setSelectedCategory] = useState(existingCategory || "Choose Category");
-
-  // Update the selected category if existingCategory changes
+  const [selectedCategory, setSelectedCategory] = useState(
+    existingCategory || "Choose Category"
+  );
   useEffect(() => {
     if (existingCategory) {
       setSelectedCategory(existingCategory);
@@ -14,7 +14,7 @@ function CategoryDropDownMenu({ setCategory, existingCategory }) {
 
   const handleSelect = (category) => {
     setSelectedCategory(category);
-    setCategory(category); // Update the parent component if necessary
+    setCategory(category);
   };
 
   return (

@@ -1,30 +1,31 @@
 import { useState, useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 
-
 export default function ImageUploader({ setImage, existingImage }) {
   const [base64, setBase64] = useState(existingImage || "");
   const [uploadSuccess, setUploadSuccess] = useState(false);
 
-  const onDrop = useCallback((acceptedFiles) => {
-    const file = acceptedFiles[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onloadend = () => {
-        setBase64(reader.result);
-        setImage(reader.result); // Pass base64 to parent component
-        setUploadSuccess(false); // Reset success state on new image selection
-      };
-    }
-  }, [setImage]);
+  const onDrop = useCallback(
+    (acceptedFiles) => {
+      const file = acceptedFiles[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onloadend = () => {
+          setBase64(reader.result);
+          setImage(reader.result);
+          setUploadSuccess(false);
+        };
+      }
+    },
+    [setImage]
+  );
 
   const { getRootProps, getInputProps } = useDropzone({
     onDrop,
     accept: "image/*",
     multiple: false,
   });
-
 
   return (
     <div className="flex flex-col items-center p-3 border-2 border-dashed border-gray-300 rounded-md cursor-pointer w-full max-w-sm">
@@ -50,6 +51,3 @@ export default function ImageUploader({ setImage, existingImage }) {
     </div>
   );
 }
-
-
-

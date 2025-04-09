@@ -36,8 +36,14 @@ const ReviewsBody = () => {
   return (
     <div className="owl-carousel owl-theme">
       {reviews.map((item) => {
-       return <ReviwsItem name={item.name} content={item.content} key={Math.random()}/>
-})}
+        return (
+          <ReviwsItem
+            name={item.name}
+            content={item.content}
+            key={Math.random()}
+          />
+        );
+      })}
     </div>
   );
 };

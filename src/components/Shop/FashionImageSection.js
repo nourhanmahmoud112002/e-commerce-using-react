@@ -4,7 +4,7 @@ const FashionImageSection = () => {
       <img
         src="/assets/images/image1.jpg"
         alt="first"
-        style={{width:500}}
+        style={{ width: 500 }}
         className="img-fluid"
       />
       <div className="position-absolute top-0 end-0 py-2">

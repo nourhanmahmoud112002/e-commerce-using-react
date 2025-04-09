@@ -20,9 +20,9 @@ const Dashboard = () => {
     await DeleteData(id);
     setItems((prevItems) => prevItems.filter((item) => item.id !== id));
   };
-  const AddHandler=(response)=>{
-    setItems((response))
-  }
+  const AddHandler = (response) => {
+    setItems(response);
+  };
   return (
     <div className="m-5">
       <ShopNowButton
@@ -31,11 +31,18 @@ const Dashboard = () => {
           setShowAddProduct(true);
         }}
       />
-      
-      <DashboardTable items={items} onAdd={AddHandler} onDelete={handleDelete}/>
+
+      <DashboardTable
+        items={items}
+        onAdd={AddHandler}
+        onDelete={handleDelete}
+      />
       {showAddProduct && (
         <>
-          <AddProduct onClose={() => setShowAddProduct(false)} onAdd={AddHandler}/>
+          <AddProduct
+            onClose={() => setShowAddProduct(false)}
+            onAdd={AddHandler}
+          />
           <div className="modal-backdrop show"></div>
         </>
       )}

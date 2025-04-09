@@ -4,20 +4,20 @@ function HasDiscountRadioButton({ existingHasDiscount, setHasDiscount }) {
   const [selectedOption, setSelectedOption] = useState("");
 
   useEffect(() => {
-    if (existingHasDiscount!==undefined) {
-      setSelectedOption(existingHasDiscount?"true":"false");
+    if (existingHasDiscount !== undefined) {
+      setSelectedOption(existingHasDiscount ? "true" : "false");
     }
   }, [existingHasDiscount]);
 
   const handleChange = (event) => {
     const value = event.target.value;
     setSelectedOption(value);
-    setHasDiscount(value==="true"); 
+    setHasDiscount(value === "true");
   };
 
   return (
     <div className="mb-2">
-      <p>Has Discount :</p>  
+      <p>Has Discount :</p>
       <label className="block mb-2 px-4">
         <input
           type="radio"

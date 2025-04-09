@@ -1,6 +1,9 @@
 const StyleContent = (props) => {
   return (
-    <div className="card border-light" style={{ height: 200 ,borderRadius:16,overflow:"hidden"}}>
+    <div
+      className="card border-light"
+      style={{ height: 200, borderRadius: 16, overflow: "hidden" }}
+    >
       <img
         src={props.imagePath}
         className="card-img"
@@ -9,7 +12,6 @@ const StyleContent = (props) => {
           width: "100%",
           height: "100%",
           objectFit: "cover",
-          
         }}
       ></img>
       <div className="card-img-overlay">

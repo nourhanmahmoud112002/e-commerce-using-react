@@ -5,8 +5,8 @@ const Reviews = () => {
   return (
     <section>
       <div className="container-lg my-5">
-        <ReviewsHeader/>
-        <ReviewsBody/>
+        <ReviewsHeader />
+        <ReviewsBody />
       </div>
     </section>
   );

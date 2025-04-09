@@ -16,7 +16,7 @@ const CollapsedMenuButton = () => {
       </button>
 
       {/* <!-- SHOP.CO brand --> */}
-      <ShopCoBrand/>
+      <ShopCoBrand />
     </div>
   );
 };

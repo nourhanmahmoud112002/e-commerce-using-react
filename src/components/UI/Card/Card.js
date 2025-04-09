@@ -7,7 +7,6 @@ const Card = (props) => {
       <div className="card border-light">
         <CardImage imagePath={props.imagePath} />
         <CardBody
-          
           hasDiscount={props.hasDiscount}
           price={props.price}
           discount={props.discount}
@@ -21,5 +20,3 @@ const Card = (props) => {
 };
 
 export default Card;
-
-

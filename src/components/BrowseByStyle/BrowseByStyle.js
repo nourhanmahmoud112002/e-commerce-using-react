@@ -35,10 +35,10 @@ const BrowseByStyle = () => {
       >
         <SectionHeader title="BROWSE BY DRESS STYLE" AddClass="pt-5 pb-2" />
         <Styles ParentClass="mb-2">
-          <StylesGrid styles={stylesFirstRow}/>
+          <StylesGrid styles={stylesFirstRow} />
         </Styles>
         <Styles ParentClass="mb-5">
-          <StylesGrid styles={stylesSecondRow}/>
+          <StylesGrid styles={stylesSecondRow} />
         </Styles>
       </div>
     </section>

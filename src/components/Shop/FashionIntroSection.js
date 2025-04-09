@@ -7,7 +7,7 @@ const FashionIntroSection = () => {
   return (
     <div className="col-md-6">
       <FindClothesText />
-      <ShopNowButton title="Shop Now"/>
+      <ShopNowButton title="Shop Now" />
       <br />
       <br />
       <div className="d-flex flex-wrap btn-group" role="group">
