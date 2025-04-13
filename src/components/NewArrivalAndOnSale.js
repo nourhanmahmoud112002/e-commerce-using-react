@@ -3,7 +3,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import DataFilteration from "../data/DataFilteration";
+// import DataFilteration from "../data/DataFilteration";
+import DataFilteration from "../data/FilterData";
 import Card from "./UI/Card/Card";
 import SectionHeader from "./UI/SectionHeader";
 import ViewAllButton from "./UI/ViewAllButton";

@@ -1,4 +1,4 @@
-import DataFetching from "./data";
+import DataFetching from "./FetchData";
 
 
 const DataFilteration=async(category)=>{

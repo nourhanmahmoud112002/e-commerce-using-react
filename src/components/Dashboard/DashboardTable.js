@@ -37,6 +37,7 @@ const DashboardTable = (props) => {
               id={item.id}
               onDelete={props.onDelete}
               onAdd={props.onAdd}
+              onEdit={props.onEdit}
             />
           );
         })}
